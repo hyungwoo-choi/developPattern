@@ -8,7 +8,8 @@ public class On implements State{
         return on;
     }
     public void on_button_pushed(Light light){
-        System.out.println("변화없음");
+        System.out.println("sleeping mode!");
+        light.setState(Sleeping.getInstance());
     }
     public void off_button_pushed(Light light){
         System.out.println("light off!");
