@@ -1,4 +1,4 @@
-package Observer;
+package Observer.FirstBeforeCase;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ public class ScoreRecord {
         this.dataSheetView = dataSheetView;
     }
     public void addScore(Integer score){
-        scores.add(score     );
+        scores.add(score);
         dataSheetView.update();
     }
     public List<Integer> getScoreRecord(){

@@ -1,4 +1,4 @@
-package Observer;
+package Observer.FirstBeforeCase;
 
 public class Client {
     public static void main(String[] args) {
