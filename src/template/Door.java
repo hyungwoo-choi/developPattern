@@ -1,19 +1,22 @@
 package template;
 
+import template.Enum.DoorStatus;
+
 public class Door {
+    private DoorStatus doorStauts;
 
-    private DoorStatus doorStatus;
-    public Door(){
-        doorStatus = DoorStatus.CLOSED;
+    public Door() {
+        doorStauts = DoorStatus.CLOSED;
     }
+
     public DoorStatus getDoorStatus(){
-        return doorStatus;
+        return doorStauts;
     }
 
-    public void open(){
-        doorStatus = DoorStatus.CLOSED;
-    }
     public void close(){
-        doorStatus = DoorStatus.OPEN;
+        doorStauts = DoorStatus.CLOSED;
+    }
+    public void open(){
+        doorStauts = DoorStatus.OPENED;
     }
 }
